@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - .db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: $DB_DEV_NAME
+      MYSQL_USER: $DB_DEV_USERNAME
+      MYSQL_PASSWORD: $DB_DEV_PASSWORD
+      MYSQL_ROOT_PASSWORD: $DB_DEV_R_PWD
+      MYSQL_ROOT_HOST: $DB_DEV_HOST
+volumes:
+  .db_data:
