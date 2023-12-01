@@ -1,2 +1,4 @@
 .env
 .db_data
+docker/bind9/config/*.zone
+docker/bind9/config/*.conf
