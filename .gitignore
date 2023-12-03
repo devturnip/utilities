@@ -1,11 +1,18 @@
 .env
 .db_data
+
+#bind9
 docker/bind9/config/*.zone
 docker/bind9/config/*.conf
-
 
 #odoo
 docker/odoo/config
 docker/odoo/data
 docker/odoo/db
 docker/odoo/extra-addons
+
+#inventree
+docker/inventree/data
+
+#mac
+*.DS_STORE
