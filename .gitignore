@@ -2,3 +2,10 @@
 .db_data
 docker/bind9/config/*.zone
 docker/bind9/config/*.conf
+
+
+#odoo
+docker/odoo/config
+docker/odoo/data
+docker/odoo/db
+docker/odoo/extra-addons
