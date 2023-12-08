@@ -2,3 +2,9 @@
 .db_data
 docker/bind9/config/*.zone
 docker/bind9/config/*.conf
+
+
+#invoiceninja
+*stack.env
+docker/invoiceninja/app/public
+docker/invoiceninja/app/storage
